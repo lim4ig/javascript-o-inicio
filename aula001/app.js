@@ -100,20 +100,94 @@ console.log(typeof salario)
 console.log(typeof fumante)
 
 // Operadores
-//     Operador Atribuição
+//     Operador Atribuição (=)
+    salario = 2500
 
-//     Operadores aritméticos
+//     Operadores aritméticos (+, -, *, /)
+    let n1 = 10, n2 = 5
+    console.log(n1+n2) // soma
+    console.log(n1-n2) // subtração
+    console.log(n1*n2) // multiplicação
+    console.log(n1/n2) // divisão
+    console.log(n1%n2) // Modulo (Pega o resto da divisão)
 
-//     Operadores relacionais
+//     Operadores relacionais (=, !=, >, <, >=, <=)
+    console.log(n1 == n2)
+    console.log(n1 != n2)
+    console.log(n1 > n2)
+    console.log(n1 < n2)
+    console.log(n1 >= n2)
+    console.log(n1 <= n2)
 
-//     Operadores lógicos
+//     Operadores lógicos ! - não/NOT || - ou/OR && - e/AND
+    let altura = 1.80
+    let peso = 80
+    let tipo = "criança"
+
+// muda o resultado final, se for verdadeiro vira falso e se for falso vira verdadeiro
+    console.log(!10>5)
+    
+// com || apenas uma verificação precisa ser verdadeiros
+    console.log(altura > 1.5 || peso < 150 || tipo != "criança")
+
+// com && to das as verificações devem ser verdadeiras para o resultado final ser verdadeiro
+    console.log(altura > 1.5 && peso < 150 && tipo != "criança")
 
 // Estrutura
 //     Estrutura de controle/decisão
+    let carro = "fiat"
+
+    if(carro == "bmw"){
+        console.log("vc ta bem mais ou menos") //verdadeiro
+    }else{
+        console.log("vc ta bem mais ou menos") //falso
+    }
+
+    let idadealuno = 20
+    if(idadealuno >= 18){
+        console.log("maior de idade")
+    }else{
+        console.log("menor de idade")
+    }
+
 
 //     Laços de repetição
+    let controle = 1
+    while(controle <= 10){
+        console.log(controle)
+        controle = controle + 1
+    }
 
+    controle = 1
+    while(controle <= 10){
+        console.log(7*controle)
+        controle = controle + 1
+    }
 // Arrays --> vetor
+    let zoologico = ['leão', 'elefante', 'zebra', 'ariranha', 'lobo guará', 'arara']
+    console.log(zoologico[2])
+    console.log(zoologico.length)
+
+    let frutas = ['🍓', '🍊', '🍍', '🍐', '🍌', '🍇', '🍉']
+    console.log(frutas)
+    frutas.push('🍎')
+    console.log(frutas)
+
+    let alunos =[]
+    alunos.push("joão")
+    alunos.push("renata")
+    alunos.push("roberto")
+    console.log(alunos)
 
 // Funções personalizadas
- 
+    function mensagem(){
+        console.log("Olá")
+        console.log("Seja bem vindo")
+        console.log(" :) ")
+    }
+    mensagem()
+
+    function conta(horas, sal_hora){
+        console.log(horas * sal_hora)
+    }
+    conta(140,75)
